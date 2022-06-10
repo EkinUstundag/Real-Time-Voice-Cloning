@@ -2,6 +2,7 @@ In this repository, I tried to train a TTS or Voice-Cloning model for Turkish. T
 I mostly changed parts that differentiate between Turkish and English language. Such as the cleaners and the characters defined for language.
 
 Original repo: https://github.com/CorentinJ/Real-Time-Voice-Cloning
+
 Turkish dataset: https://www.openslr.org/resources/108/TR.tgz
 
 I only trained the synthesizer. The encoder and vocoder are using the parameters from original repository.
@@ -25,6 +26,6 @@ Below is the mel spectogram at 126K steps
 ![step-126000-mel-spectrogram_sample_1](https://user-images.githubusercontent.com/47627265/173053872-a7445c7e-6211-4c44-a0f6-45eb17453bb5.png)
 
  The output voice was actually similar to my friends voice. However it gets mechanical too quickly after 1 or 2 words.
- This is probably because the recordings were not perfect. In both my friend's and above recordings there were lots of other voices besides the recording hardware (such as TV or some musical enstruments).
+ This is probably because the recordings were not perfect. In both my friend's recordings and recordings in above dataset there were lots of other voices besides the recording hardware (such as TV or some musical enstruments).
  
  I need better datasets to train. In addition, training the vocoder on a specific person can perfect the output if you would like to use it as a TTS. However, I would like a Voice-Cloning with a little input like some seconds, not 10 - 15 minutes of voice but I think models used in this repo becoming old. So, I will try with newer architectures.
