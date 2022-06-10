@@ -73,7 +73,7 @@ def preprocess_speaker(speaker_dir, out_dir: Path, skip_existing: bool, hparams,
                         # Check for .normalized.txt (LibriTTS)
                         text_fpath = wav_fpath.with_suffix(".normalized.txt")
                         assert text_fpath.exists()
-                    with text_fpath.open("r") as text_file:
+                    with text_fpath.open("r", encoding="utf-8") as text_file:
                         text = "".join([line for line in text_file])
                         text = text.replace("\"", "")
                         text = text.strip()
@@ -246,7 +246,7 @@ def create_embeddings(synthesizer_root: Path, encoder_model_fpath: Path, n_proce
     embed_dir.mkdir(exist_ok=True)
 
     # Gather the input wave filepath and the target output embed filepath
-    with metadata_fpath.open("r") as metadata_file:
+    with metadata_fpath.open("r", encoding="utf-8") as metadata_file:
         metadata = [line.split("|") for line in metadata_file]
         fpaths = [(wav_dir.joinpath(m[0]), embed_dir.joinpath(m[2])) for m in metadata]
 

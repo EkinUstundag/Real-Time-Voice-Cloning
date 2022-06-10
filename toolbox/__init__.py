@@ -35,6 +35,7 @@ recognized_datasets = [
     "VoxCeleb2/dev/aac",
     "VoxCeleb2/test/aac",
     "VCTK-Corpus/wav48",
+    "LibriSpeech2/train-clean-100-2"
 ]
 
 # Maximum of generated wavs to keep on memory
