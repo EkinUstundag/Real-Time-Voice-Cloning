@@ -28,5 +28,5 @@ Below is the mel spectogram at 126K steps
  The output voice was actually similar to my friends voice. However it gets mechanical too quickly after 1 or 2 words.
  This is probably because the recordings were not perfect. In both my friend's recordings and recordings in above dataset there were lots of other voices besides the recording hardware (such as TV or some musical enstruments).
  
- I need better datasets to train. In addition, training the vocoder on a specific person can perfect the output if you would like to use it as a TTS. However, I would like a Voice-Cloning with a little input like some seconds, not 10 - 15 minutes of voice but I think models used in this repo becoming old. So, I will try with newer architectures.
-3
+ I need better datasets to train. In addition, training the vocoder on a specific person can perfect the output if you would like to use it as a TTS. However, I would like a Voice-Cloning with a little input like some seconds, not 10 - 15 minutes of voice but I think models used in this repo are becoming old. So, I will try with newer architectures.
+
