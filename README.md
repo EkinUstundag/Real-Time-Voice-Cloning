@@ -19,7 +19,7 @@ I saw a comment that the model can be trained on a specific person's sound and k
 I used the model above at 103K steps as a pretrained model, since it can understand Turkish text, and trained on a specific person's voice.
 I did not use any voice from the above dataset. This is because I need a lot more occurences, above dataset has too few voice samples per person. One of my friends created an amateur dataset where she read sentences from different books. It was around 10 - 15 minutes of voice.
 
-This is the attention layer at 126K steps on top of 103K already so around ~240K in total
+This is the attention layer at 126K steps on top of 103K already so around ~230K in total
 ![attention_step_126000_sample_1](https://user-images.githubusercontent.com/47627265/173053689-5a442efb-532f-45f1-9f86-163791708d4f.png)
 
 Below is the mel spectogram at 126K steps
@@ -29,3 +29,4 @@ Below is the mel spectogram at 126K steps
  This is probably because the recordings were not perfect. In both my friend's recordings and recordings in above dataset there were lots of other voices besides the recording hardware (such as TV or some musical enstruments).
  
  I need better datasets to train. In addition, training the vocoder on a specific person can perfect the output if you would like to use it as a TTS. However, I would like a Voice-Cloning with a little input like some seconds, not 10 - 15 minutes of voice but I think models used in this repo becoming old. So, I will try with newer architectures.
+3
